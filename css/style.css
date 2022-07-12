@@ -5,12 +5,21 @@
 }
 
 :root {
-    --font-color-light: #fff;
     --title-font-family: 'Inter', sans-serif;
     --paragraph-font-family: 'Poppins', sans-serif;
     --primary-color: #EF233C;
-}
+    --font-color-light: #fff;
+    --section-title-color:#121212;
+    --font-color-dark:#707070;
 
+}
+.container{
+    max-width: 1440px;
+    width: 70%;
+}
+.margin-top{
+    margin-top: 5%;
+}
 button {
     color: var(--font-color-light);
     font-family: var(--title-font-family);
@@ -20,8 +29,8 @@ button {
     border: 1px solid transparent;
     padding: 10px 20px;
     font-size: 20px;
-    transition: background-color 2000ms;
     transition: color 200ms;
+    margin-left: 0;
 
 }
 
@@ -52,6 +61,7 @@ button:hover {
     z-index: 1;
     height: 100%;
     max-width: 1440px;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -75,4 +85,41 @@ button:hover {
     font-size: 18px;
     margin: 30px 0px;
     line-height: 27px;
+}
+
+
+/* section 2 */
+.flexbox{
+    display: flex;
+}
+.half-width {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.half-width > .section-title{
+    margin-left: 0;
+}
+.section-title{
+    font-family: var(--title-font-family);
+    color: var(--section-title-color);
+    font-size: 45px;
+}
+.section-pera{
+    font-family: var(--paragraph-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 30px 0px;
+    line-height: 27px; 
+    color: var(--font-color-dark);
+}
+
+.section-img{
+    height: 477px;
+    margin-left: 0;
+}
+
+.padding-right{
+    padding-right: 5%;
 }
