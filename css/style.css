@@ -39,6 +39,10 @@ button:hover {
     background-color: var(--font-color-light);
     border: 1px solid var(--primary-color);
 }
+.section-head{
+    text-align: center;
+    width: 50%;
+}
 
 /* Banner section */
 .banner-section {
@@ -122,4 +126,31 @@ button:hover {
 
 .padding-right{
     padding-right: 5%;
+}
+
+/* section 3 */
+.card-icon{
+    width: 56px;
+    height: 56px;
+}
+.card-title{
+    font-family: var(--title-font-family);
+    color: var(--section-title-color);
+    font-size: 20px;
+}
+.card-pera{
+    font-family: var(--paragraph-font-family);
+    color: var(--font-color-dark);
+    font-size: 18px;
+}
+.card-wrapper{
+    background-color: #FEF4F5;
+    border-radius: 5px;
+    padding: 20px;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px 20px;
+    width: 80%;
 }
