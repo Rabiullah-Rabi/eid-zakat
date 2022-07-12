@@ -1,0 +1,78 @@
+/* Global css */
+
+* {
+    margin: 0 auto;
+}
+
+:root {
+    --font-color-light: #fff;
+    --title-font-family: 'Inter', sans-serif;
+    --paragraph-font-family: 'Poppins', sans-serif;
+    --primary-color: #EF233C;
+}
+
+button {
+    color: var(--font-color-light);
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: background-color 2000ms;
+    transition: color 200ms;
+
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color: var(--font-color-light);
+    border: 1px solid var(--primary-color);
+}
+
+/* Banner section */
+.banner-section {
+    height: 100vh;
+    background-image: url("../images/Rectangle 1.png");
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 0) 100%);
+    position: absolute;
+    z-index: 0;
+}
+
+.banner-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--font-color-light);
+}
+
+.banner-content {
+    width: 50%;
+    margin-left: 0;
+}
+
+.banner-title {
+    font-family: var(--title-font-family);
+    font-weight: bold;
+    font-size: 75px;
+}
+
+.banner-sub-title {
+    font-family: var(--paragraph-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 30px 0px;
+    line-height: 27px;
+}
