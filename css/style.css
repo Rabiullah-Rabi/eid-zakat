@@ -154,3 +154,28 @@ button:hover {
     grid-gap: 20px 20px;
     width: 80%;
 }
+/* section4 */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px 20px;
+    width: 100%;
+}
+.img-card{
+    height: 391px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-card > img {
+    height: 100%;
+    width: 100%;
+    transition: all 1000ms;
+    object-fit: cover;
+}
+.img-card:hover > img{
+    transform: scale(1.5);
+}
+
+/* section-5 */
